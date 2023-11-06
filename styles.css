@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto' sans-serif;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#container {
+    width: 400px;
+    border: 2px black solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+#screen {
+    background-color: #eee;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+#screenLast {
+    min-height: 32px;
+    font-size: 20px;
+}
+
+#screenCurrent {
+    min-height: 64px;
+    font-size: 40px;
+}
+
+.btn, #screen {
+    border: 2px black solid;
+    border-radius: 5px;
+}
+
+.btn {
+    font-size: 30px;
+    min-height: 92.5px;
+}
+
+#buttonsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+#clearBtn {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: lightcoral;
+}
+
+#deleteBtn {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-color: lightblue;
+}
+
+#equalsBtn {
+    background-color: blanchedalmond;
+}
