@@ -12,10 +12,10 @@ const decimalButton = document.getElementById('decimalBtn');
 const lastOperationScreen = document.getElementById('screenLast');
 const currentOperationScreen = document.getElementById('screenCurrent');
 
-equalsButton.addEventListener('click', calculate)
-clearButton.addEventListener('click', clear)
-deleteButton.addEventListener('click', deleteNumber)
-decimalButton.addEventListener('click', appendDecimal)
+equalsButton.addEventListener('click', equals);
+clearButton.addEventListener('click', clear);
+deleteButton.addEventListener('click', deleteNumber);
+decimalButton.addEventListener('click', appendDecimal);
 
 numberButtons.forEach((button) =>
     button.addEventListener('click', () => appendNumber(button.textContent))
@@ -39,6 +39,11 @@ function multiplication(a, b) {
 
 function division(a, b) {
     return a / b;
+}
+
+function equals() {
+    calculate();
+    shouldResetScreen = true;
 }
 
 function resetScreen() {
